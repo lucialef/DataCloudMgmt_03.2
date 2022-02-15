@@ -1,0 +1,168 @@
+html{
+    /* background-color:hsl(188, 50%, 67%) ; */
+    background-color:lightblue;
+    color: black;
+    font-family: monospace;
+    font-style: italic;
+    font-size: 11pt;
+    text-align: left;
+   }
+
+#info {
+    position: absolute;
+    color:mediumvioletred;
+    bottom: 0px;
+    left: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+    font-size: 15pt;
+    text-align: left;
+    opacity: .5;
+}
+
+#container {
+    position: absolute;
+    z-index: 100;
+    left: 5px;
+    padding: 0px;
+    width: 100%;
+}
+
+#overlay { /* Slider */
+    position: absolute;
+    z-index: 1;
+    top: 5pt; 
+    left: 5pt;
+    width: 100%;
+}
+
+#loader {
+    border: 5px solid black; /* Violet */
+    border-top: 5px solid white; /* White */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+} 
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ///////////////////////// BUTTON ///////////////////////// */
+#downloadButton {
+    position: relative;
+    background: mediumvioletred;
+    border: none;
+    outline: none;
+    padding: 1pt;
+    left: 1pt;
+    width: 90px;
+    font-size: 12pt;
+    font-family: monospace;
+    color: white;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+#downloadButton:hover{
+    background: black;
+}
+
+/* ///////////////////////// SLIDERS ///////////////////////// */
+#center {
+    appearance: none;
+    height: 12px; 
+    background: mediumvioletred;
+    outline: none; 
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+#center::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px; 
+    height: 12px; 
+    background: white; 
+    cursor: pointer; 
+}
+
+#center:hover{
+    background: black;
+}
+
+#end {
+    appearance: none;
+    height: 12px; 
+    background: mediumvioletred ; 
+    outline: none; 
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+#end::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px; 
+    height: 12px; 
+    background: white; 
+    cursor: pointer; 
+}
+
+#end:hover{
+    background: black;
+}
+
+#collision {
+    appearance: none;
+    height: 12px; 
+    background: mediumvioletred ; 
+    outline: none; 
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+#collision::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px; 
+    height: 12px; 
+    background: white; 
+    cursor: pointer; 
+}
+
+#collision:hover{
+    background: black;
+}
+
+#skin {
+    appearance: none;
+    height: 12px; 
+    background: mediumvioletred ; 
+    outline: none; 
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+#skin::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px; 
+    height: 12px; 
+    background: white; 
+    cursor: pointer; 
+}
+
+#skin:hover{
+    background: black;
+}
+
+
+/*
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width
+    height: 25px; /* Slider handle height
+    background: #04AA6D; /* Green background
+    cursor: pointer; /* Cursor on hover */
